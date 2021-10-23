@@ -1,0 +1,105 @@
+{
+  "id": "/subscriptions/0f0385f3-9e3c-4f7d-b300-6e4afc2ca278/resourceGroups/RSG1/providers/Microsoft.Resources/deployments/Microsoft.Web-WebApp-Portal-6aba4377-9909",
+  "name": "Microsoft.Web-WebApp-Portal-6aba4377-9909",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/0f0385f3-9e3c-4f7d-b300-6e4afc2ca278/resourcegroups/RSG1/providers/Microsoft.Web/sites/Blockz",
+    "marketplaceItemId": "Microsoft.WebSite",
+    "provisioningHash": "customize-post-provisioning-steps-webapp-deployment"
+  },
+  "properties": {
+    "templateHash": "18064430035691350891",
+    "parameters": {
+      "subscriptionId": {
+        "type": "String",
+        "value": "0f0385f3-9e3c-4f7d-b300-6e4afc2ca278"
+      },
+      "name": {
+        "type": "String",
+        "value": "Blockz"
+      },
+      "location": {
+        "type": "String",
+        "value": "Central US"
+      },
+      "hostingPlanName": {
+        "type": "String",
+        "value": "ASP-RSG1-b544"
+      },
+      "serverFarmResourceGroup": {
+        "type": "String",
+        "value": "RSG1"
+      },
+      "alwaysOn": {
+        "type": "Bool",
+        "value": false
+      },
+      "sku": {
+        "type": "String",
+        "value": "Free"
+      },
+      "skuCode": {
+        "type": "String",
+        "value": "F1"
+      },
+      "workerSize": {
+        "type": "String",
+        "value": "0"
+      },
+      "workerSizeId": {
+        "type": "String",
+        "value": "0"
+      },
+      "numberOfWorkers": {
+        "type": "String",
+        "value": "1"
+      },
+      "linuxFxVersion": {
+        "type": "String",
+        "value": "NODE|14-lts"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Running",
+    "timestamp": "2021-10-03T01:53:31.5380159Z",
+    "duration": "PT0.7313031S",
+    "correlationId": "1df08946-fbcf-4114-b0d5-2fc45a8a6bb8",
+    "providers": [
+      {
+        "namespace": "Microsoft.Web",
+        "resourceTypes": [
+          {
+            "resourceType": "sites",
+            "locations": [
+              "centralus"
+            ]
+          },
+          {
+            "resourceType": "serverfarms",
+            "locations": [
+              "centralus"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/0f0385f3-9e3c-4f7d-b300-6e4afc2ca278/resourceGroups/RSG1/providers/Microsoft.Web/serverfarms/ASP-RSG1-b544",
+            "resourceType": "Microsoft.Web/serverfarms",
+            "resourceName": "ASP-RSG1-b544"
+          }
+        ],
+        "id": "/subscriptions/0f0385f3-9e3c-4f7d-b300-6e4afc2ca278/resourceGroups/RSG1/providers/Microsoft.Web/sites/Blockz",
+        "resourceType": "Microsoft.Web/sites",
+        "resourceName": "Blockz"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}
